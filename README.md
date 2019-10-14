@@ -1,7 +1,7 @@
 # Restoring ancient text using deep learning
 ## A case study on Greek epigraphy
 
-Yannis Assael<sup>*</sup>, Thea Sommerschield<sup>*</sup>, Jonathan Prag
+Yannis Assael<sup>\*</sup>, Thea Sommerschield<sup>\*</sup>, Jonathan Prag
 
 ---
 
