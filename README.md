@@ -21,8 +21,8 @@ Pythia-Bi-Word processing the phrase μηδέν ἄγαν (mēdén ágan) "nothi
 
 ### References
 
-- [Pre-print](http://comingsoon)
-- [EMNLP](http://comingsoon)
+- [arXiv Pre-print](https://arxiv.org/abs/1910.06262)
+- [EMNLP-IJCNLP 2019](https://www.emnlp-ijcnlp2019.org/program/accepted/)
 
 When using any of this project's source code, please cite:
 ```
