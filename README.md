@@ -46,7 +46,8 @@ The following snippets provide references for regenerating PHI-ML and training n
 
 #### Dependencies
 ```
-pip install requests bs4 coloredlogs dm-sonnet editdistance lxml nltk tensor2tensor tensorflow-gpu tqdm
+pip install requests bs4 coloredlogs dm-sonnet editdistance lxml nltk tensor2tensor tensorflow-gpu tqdm && \
+python -m nltk.downloader punkt
 ```
 
 #### PHI-ML dataset generation
