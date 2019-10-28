@@ -1,0 +1,10 @@
+requests==2.22.0
+bs4==0.0.1
+coloredlogs==10.0
+dm-sonnet==1.23
+editdistance==0.5.3
+lxml==4.4.1
+nltk==3.4.5
+tensor2tensor==1.14.1
+tensorflow-gpu==1.14.0
+tqdm==4.36.1
