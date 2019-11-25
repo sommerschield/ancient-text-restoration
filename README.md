@@ -22,7 +22,7 @@ Pythia-Bi-Word processing the phrase μηδέν ἄγαν (mēdén ágan) "nothi
 ### References
 
 - [arXiv pre-print](https://arxiv.org/abs/1910.06262)
-- [EMNLP-IJCNLP 2019](https://www.emnlp-ijcnlp2019.org/program/accepted/)
+- [EMNLP-IJCNLP 2019](https://www.aclweb.org/anthology/D19-1668)
 
 When using any of this project's source code, please cite:
 ```
@@ -30,6 +30,7 @@ When using any of this project's source code, please cite:
   title={Restoring ancient text using deep learning: a case study on {Greek} epigraphy},
   author={Assael, Yannis and Sommerschield, Thea and Prag, Jonathan},
   booktitle={Empirical Methods in Natural Language Processing},
+  pages={6369--6376},
   year={2019}
 }
 ```
