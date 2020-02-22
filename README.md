@@ -48,7 +48,7 @@ The following snippets provide references for regenerating PHI-ML and training n
 #### Dependencies
 ```
 pip install -r requirements.txt && \
-python -m nltk.downloader punkts
+python -m nltk.downloader punkt
 ```
 
 #### PHI-ML dataset generation
