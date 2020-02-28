@@ -80,7 +80,7 @@ RUN apt-get update -y && apt-get install software-properties-common -y && \
     apt-get install -y git nano vim man build-essential
 
 # Install python packages
-RUN pip install requests bs4 coloredlogs dm-sonnet editdistance lxml nltk tensor2tensor tqdm
+RUN pip install requests bs4 coloredlogs dm-sonnet editdistance lxml nltk tensor2tensor tqdm cloudscraper
 RUN python -m nltk.downloader punkt
 
 # Cleanup
