@@ -18,6 +18,7 @@ import argparse
 import concurrent.futures
 import os
 
+import cloudscraper
 import requests
 from bs4 import BeautifulSoup
 from tqdm import tqdm
@@ -31,14 +32,14 @@ FLAGS = p.parse_args()
 
 
 # Auxiliary functions
-def load_phi_id(phi_id, timeout, output):
+def load_phi_id(phi_id, timeout, output, scraper=requests):
   file_path = os.path.join(output, '{}.txt'.format(phi_id))
   if os.path.exists(file_path):
     return 'Exists'
 
   url_text_pattern = 'https://epigraphy.packhum.org/text/{}'
   url = url_text_pattern.format(phi_id)
-  req = requests.get(url, timeout=timeout)
+  req = scraper.get(url, timeout=timeout)
 
   if "Invalid PHI Inscription Number" not in req.text:
     try:
@@ -69,16 +70,18 @@ def main():
   # Create structure
   os.makedirs(FLAGS.output, exist_ok=True)
 
+  # Cloudflare scraper
+  scraper = cloudscraper.create_scraper()
+
   # Download inscriptions
   with concurrent.futures.ThreadPoolExecutor(max_workers=FLAGS.connections) as executor:
-    future_to_phi = (executor.submit(load_phi_id, text_i, FLAGS.timeout, FLAGS.output) for text_i in
+    future_to_phi = (executor.submit(load_phi_id, text_i, FLAGS.timeout, FLAGS.output, scraper) for text_i in
                      range(1, FLAGS.max_phi_id))
     for future in tqdm(concurrent.futures.as_completed(future_to_phi), total=FLAGS.max_phi_id):
       try:
         future.result()
       except:
         pass
-
 
 if __name__ == '__main__':
   main()

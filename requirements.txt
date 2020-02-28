@@ -8,3 +8,4 @@ nltk==3.4.5
 tensor2tensor==1.14.1
 tensorflow-gpu==1.15.2
 tqdm==4.36.1
+cloudscraper==1.2.24
