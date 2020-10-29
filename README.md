@@ -23,6 +23,9 @@ Pythia-Bi-Word processing the phrase μηδέν ἄγαν (mēdén ágan) "nothi
 
 - [arXiv pre-print](https://arxiv.org/abs/1910.06262)
 - [EMNLP-IJCNLP 2019](https://www.aclweb.org/anthology/D19-1668)
+- [Digital Classicist Wiki](https://wiki.digitalclassicist.org/Pythia)
+- [DeepMind research blog](https://deepmind.com/research/publications/Restoring-ancient-text-using-deep-learning-a-case-study-on-Greek-epigraphy)
+- [University of Oxford news blog](https://www.ox.ac.uk/news/arts-blog/restoring-ancient-greek-inscriptions-using-ai-deep-learning)
 
 When using any of this project's source code, please cite:
 ```
