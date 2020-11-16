@@ -18,8 +18,6 @@ import collections
 
 import sonnet as snt
 import tensorflow as tf
-from tensor2tensor.models import transformer
-from tensor2tensor.utils.learning_rate import learning_rate_schedule
 
 
 class Model(snt.AbstractModule):
@@ -36,11 +34,6 @@ class Model(snt.AbstractModule):
     self._unk_idx = alphabet.unk_idx
     self._sos_idx = alphabet.sos_idx
     self._eos_idx = alphabet.eos_idx
-
-  @staticmethod
-  def get_learning_rate():
-    hparams = transformer.transformer_base()
-    return learning_rate_schedule(hparams)
 
   def _build(self,
              batch,

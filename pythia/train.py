@@ -44,7 +44,7 @@ p.add_argument('--dataset_test_set', default='valid', type=str, help='valid/test
 p.add_argument('--load_checkpoint', default='', type=str, help='load from checkpoint')
 # training behaviour options:
 p.add_argument('--batch_size', default=32, type=int, help='batch size')
-p.add_argument('--learning_rate', default=1e-3, type=float, help='learning rate')
+p.add_argument('--learning_rate', default=3e-4, type=float, help='learning rate')
 p.add_argument('--grad_clip', default=5., type=float, help='gradient norm clipping')
 p.add_argument('--beam_width', default=5, type=int, help='beam search width')
 p.add_argument('--eval_samples', default=1600, type=int, help='number of evaluation samples')

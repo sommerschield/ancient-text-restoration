@@ -58,7 +58,7 @@ def build_graph(config, alphabet, texts, model):
   with tf.name_scope('optimizer'):
     tvars = tf.trainable_variables()
     grads, _ = tf.clip_by_global_norm(tf.gradients(train_loss, tvars), config.grad_clip)
-    optimizer = tf.train.AdamOptimizer(model.get_learning_rate())
+    optimizer = tf.train.AdamOptimizer(config.learning_rate)
     train_step = optimizer.apply_gradients(zip(grads, tvars), global_step=global_step)
 
   # evaluate performance
