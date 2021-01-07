@@ -3,7 +3,7 @@ bs4==0.0.1
 coloredlogs==10.0
 dm-sonnet==1.23
 editdistance==0.5.3
-lxml==4.4.1
+lxml==4.6.2
 nltk==3.4.5
 tensorflow-gpu==1.15
 tqdm==4.36.1
