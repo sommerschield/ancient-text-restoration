@@ -1,4 +1,4 @@
-requests==2.22.0
+requests==2.31.0
 bs4==0.0.1
 coloredlogs==10.0
 dm-sonnet==1.23
